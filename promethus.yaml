@@ -1,2 +1,8 @@
 ---
-- name: promrtheus
+ - name: create user account
+   hosts: all
+   tasks:
+     - name: create user sandip
+       user:
+         name: sandip
+         state: present
